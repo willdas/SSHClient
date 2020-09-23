@@ -1,8 +1,8 @@
 # SSHClient
 一个JAVA版的SSH连接客户端，目前支持连接、关闭、上传、下载功能
 
-开始工具及jar包：
-1、jdk版本：1.8
+JDK版本号及jar包：
+1、JDK版本：1.8
 2、第三方包：eddsa.jar、log4j2.jar、trilead-ssh2.jar
 
 使用说明：
