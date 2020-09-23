@@ -65,13 +65,9 @@ public class DrawGui extends JFrame {
     private void placeComponents(JPanel panel) {
         panel.setLayout(null);
         this.ipTextField = this.getJTextField(this.getX(0, 15, 1), y, textFieldWidth, height);
-        ipTextField.setText("45.207.49.71");
         this.portTextField = this.getJTextField(this.getX(ipTextField.getX(), ipTextField.getWidth(), 2), y, textFieldWidth, height);
-        portTextField.setText("22");
         this.userNameJTextField = this.getJTextField(this.getX(portTextField.getX(), portTextField.getWidth(), 2), y, textFieldWidth, height);
-        userNameJTextField.setText("root");
         this.passwordField = this.getJPasswordField(this.getX(userNameJTextField.getX(), userNameJTextField.getWidth(), 2), y, textFieldWidth, height);
-        passwordField.setText("n5C4aPvp1IEZ");
         this.tipLabel = this.getJLabel("未连接", this.getX(passwordField.getX(), passwordField.getWidth(), 7), y, textFieldWidth, height);
         this.infoLabel = this.getJLabel("", this.getX(passwordField.getX(), passwordField.getWidth(), 7), scrollPaneY + scrollPaneHeight + 10, textFieldWidth, height);
         this.buttonEventListener = new ButtonEventListener(ipTextField, portTextField, userNameJTextField, passwordField, tipLabel, infoLabel);
