@@ -16,7 +16,8 @@ JDK版本号及jar包:
 
 编译成Mac App步骤:  
 1、制作Mac App图标  
-iconutil -c icns app.iconset  
+iconutil -c icns app.iconset 
+(app.iconset文件夹里存放的是16～512不同像素的png图片)
 2、生成Mac App程序  
 javapackager -deploy -native image  -outdir "输出文件的目录" -outfile "输出的文件" -srcfiles "jar文件全路径" -Bicon="图标路径" -appclass "主程序路径" -name "程序名称"  
 例子：  
